@@ -1,0 +1,2 @@
+# AmazJsOrz
+Amazing javascript
