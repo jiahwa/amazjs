@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	a{display: block;}
+</style>
+<body>
+
+</body>
+<script type="text/javascript">
+	var list = {"result":[{"name":"","url":"userLogin"},{"name":"","url":"userLogin/login"},{"name":"","url":"main"},{"name":"","url":"main/welcome"},{"name":"公告页","url":"main/notice"},{"name":"公告页","url":"main/noticeDetail"},{"name":"消息提醒","url":"main/msg"},{"name":"交易代办","url":"main/trsWait"},{"name":"收款人管理","url":"main/payeeMan"},{"name":"交易审核","url":"main/trsAudit"},{"name":"操作日志查询","url":"main/opeLogQry"},{"name":"录入交易维护","url":"main/preTrsMain"},{"name":"企业信息维护","url":"main/entInfoPre"},{"name":"账户管理","url":"main/accMan"},{"name":"操作员管理","url":"main/operatorMan"},{"name":"个人信息维护","url":"main/perInfoMan"},{"name":"审批流程设置","url":"main/appFlowSet"},{"name":"转账汇款---行内转账","url":"main/BankInnerTransfer"},{"name":"转账汇款---跨行转账","url":"main/CrossBankTransfer"},{"name":"批量转账","url":"main/batTrs"},{"name":"批量汇款查询","url":"main/batZQry"},{"name":"批量转账查询","url":"main/batTrsQry"},{"name":"企业中心---企业角色维护","url":"main/RoleMaintain"},{"name":"企业中心---U盾管理","url":"main/UKeyMaintain"},{"name":"集团服务---资金划拨","url":"main/ActiveAllocation"},{"name":"集团服务---子公司明细查询","url":"main/SubAccountDetailQuery"},{"name":"集团服务---资金归集","url":"main/FundSweep"},{"name":"集团服务---资金归集查询","url":"main/FundSweepQry"},{"name":"首次登录修改密码","url":"userLogin/UpdateLoginPwd"},{"name":"开户没有头部区域的模板","url":"forHead"},{"name":"在线开户","url":"forHead/OpenAccount"},{"name":"国结系统-境内/外汇出汇款-单笔汇款","url":"main/SingleRemittance"},{"name":"国结系统-境内/外汇出汇款-模板单笔汇款","url":"main/TempSingleRemittance"},{"name":"国结系统-境内/外汇出汇款-批量汇款","url":"main/BatchSingleRemittance"},{"name":"汇出查询","url":"main/ExportQuery"},{"name":"汇入查询","url":"main/ImportQuery"},{"name":"出口托收交单查询","url":"main/chukoutuoshoujiaodan"},{"name":"出口信用证查询","url":"main/chukouxinyongzheng"},{"name":"账户管理---账户总览","url":"main/CifWealthOverview"},{"name":"账户管理---账户交易明细","url":"main/ActTrsInfoQuery"},{"name":"账户管理---电子回单","url":"main/EReceiptQry"},{"name":"投资管理---活转定","url":"main/CurrentToRegular"},{"name":"投资管理---定转活","url":"main/RegularToCurrent"},{"name":"投资管理---活期转通知","url":"main/CurrentTransferCall"},{"name":"投资管理---通知转活期","url":"main/CallTransferCurrent"},{"name":"投资管理---智能存款存入","url":"main/CurrentToSmart"},{"name":"投资管理---智能存款支取","url":"main/smartdraw"},{"name":"投资管理---智能存款支取","url":"main/smartbuydrawqry"},{"name":"财务管理---代发工资","url":"main/AgentPay"},{"name":"财务管理---代发工资查询","url":"main/AgentPayQry"},{"name":"集团服务---集团账务查询","url":"main/GroupAccountInquiry"},{"name":"集团服务---集团交易查询","url":"main/GroupTradeQry"},{"name":"结汇","url":"main/FexchangeSettlement"},{"name":"结汇","url":"main/jiehuichaxun"},{"name":"待核查账户互转","url":"main/zhuanzhang"},{"name":"记录查询","url":"main/jiluchaxun"},{"name":"牌价查询","url":"main/paijiachaxun"},{"name":"结汇","url":"main/zizhujiehui"},{"name":"单笔汇款申请","url":"main/danbihuikuan"},{"name":"汇款记录查询","url":"main/huikuanchaxun"},{"name":"批量汇款申请","url":"main/piliangshenqing"},{"name":"收款人信息管理","url":"main/shoukuanren"},{"name":"批量申请维护","url":"main/weihu"},{"name":"购汇","url":"main/IndForeignExchangePurchase"},{"name":"企业网银税E贷开始企业网银税E贷-我的税E贷","url":"main/SelfRepayment"},{"name":"企业网银税E贷-我要还款","url":"main/Repayment"},{"name":"企业网银税E贷-还款记录","url":"main/repaymentListNb"},{"name":"购汇查询","url":"main/gouhuichaxun"},{"name":"开证申请","url":"main/IssuingApply"},{"name":"外汇买卖","url":"main/FexchTrad"},{"name":"开证申请查寻","url":"main/kaizhengshenqingchaxun"}]}.result;
+	var pr = "http://localhost:8082/#/";
+	var root = document.getElementsByTagName('body');
+	for (var i = 0; i < list.length; i++) {
+		var a = document.createElement('a');
+
+		a.href = pr + list[i].url;
+		a.text = list[i].name + "\t"+a.href;
+		root[0].appendChild(a);
+		
+	}
+	
+
+</script>
+</html>
