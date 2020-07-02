@@ -13,14 +13,6 @@ AmazJsOrz
 | - LICENSE
 | - README.md
 
-| - assect
-    | - images
-        | -
-    | - css
-        | -
-    | - svg
-        | -
-
 | - dist
     | - README.md
     | -
