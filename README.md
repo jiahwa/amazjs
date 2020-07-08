@@ -34,6 +34,7 @@ AmazJsOrz
     | - index.js
     | - index.html
     | - index.ts
+    | - main.js
 
     | - globals.js
     | - AmazJsOrz.png
