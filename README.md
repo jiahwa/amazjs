@@ -4,6 +4,9 @@ Amazing javascript
 惊奇J先生
 
 ---
+<h3 align="center">Dependance</h3>
+<p align="center"><img src="https://img.shields.io/npm/v/webpack.svg?label=webpack&amp;style=flat-square&amp;maxAge=3600"></p>
+---
 <h3 align="center">Document structure</h3>
 <h3 align="center">文档脉络图</h3>
 
@@ -13,13 +16,13 @@ AmazJsOrz
 | - LICENSE
 | - README.md
 
-| - dist
-    | - README.md
-    | -
+| - package.json
+| - package-lock.json
+| - tsconfig.json
 
-| - examples
-    | - REAEMD.md
-    | - 
+| - .gitignore
+| _ custom.d.ts
+| - webpack.config.js
 
 | - rust
     | - README.md
@@ -28,7 +31,17 @@ AmazJsOrz
         | -
 
 | - src
-    | - 
+    | - index.js
+    | - index.html
+    | - index.ts
+
+    | - globals.js
+    | - AmazJsOrz.png
+    | - AmazJsOrz.svg
+
+| - task
+    | - duplicatemodules.md
+    | - npmsyntax.md
 
 | - test
     | - README.md
@@ -36,12 +49,21 @@ AmazJsOrz
     | - version0.9
         | - README.md
 
+        | - vbat
+            | -  
+
+    | - version0.9.1
+        | - css
+            | -
+
+    | - version0.9.2
         | - vsurecoding
             | - (New)
 
 | - typescript
     | - README.md
-    | -
+    | - greeter.ts
+    | - greeter.js
 ```
 ---
 <h3 align="center">Bridge for web-desgin</h3>
