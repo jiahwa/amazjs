@@ -1,3 +1,4 @@
+'use strict';
 import {} from require('./data');
 
 import {} from require('./logic');

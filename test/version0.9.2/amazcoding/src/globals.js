@@ -1,3 +1,4 @@
+'use strict';
 // All global variables define here!!
 
 // 定义通用标准API-amazcod-713，实现一种转换，
@@ -14,7 +15,7 @@ var AMAZCOD_713 = {
     // AMAZJSCOD实现三类
     AMAZJSCOD: "html, json, javascript",
     // AMAZJSCOD拆分颗粒度
-    AMAZJSCOD_v_d_l: "view-html-tag, data-json-json, logic-javascript-mini_component",
+    AMAZJSCOD_v_d_l: "view->html->tag, data->json->json, logic->javascript->mini_component",
 
 };
 
