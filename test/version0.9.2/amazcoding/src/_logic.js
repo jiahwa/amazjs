@@ -21,25 +21,23 @@ function Logic( mode ) {
     this.modeset = "";
     // 具体方法
     this.method = "";
-
-    this.setModeset = function() {
-        this.modeset = this.modeset === ""
-        ? [].slice.call(arguments)
-        : this.modeset.concat([].slice.call(arguments));
-    };
-    this.getModeset = function() {
-        return this.modeset;
-    };
-    this.setMethod = function() {
-        this.method = this.method === ""
-        ? [].slice.call(arguments)
-        : this.method.concat([].slice.call(arguments));
-    };
-    this.getMethod = function() {
-        return this.method;
-    };
 };
-
+Logic.prototype.setModeset = function() {
+    this.modeset = this.modeset === ""
+    ? [].slice.call(arguments)
+    : this.modeset.concat([].slice.call(arguments));
+};
+Logic.prototype.getModeset = function() {
+    return this.modeset;
+};
+Logic.prototype.setMethod = function() {
+    this.method = this.method === ""
+    ? [].slice.call(arguments)
+    : this.method.concat([].slice.call(arguments));
+};
+Logic.prototype.getMethod = function() {
+    return this.method;
+};
 /* 调用Logic测试 */
 logic = new Logic("timeOrder");
 logic.setModeset("timeOrder", "sizeOrder");
@@ -57,15 +55,14 @@ function Initial() {
 
     // 初始化进程
     this.process = "";
-
-    this.setProcess = function() {
-        this.process = this.process === ""
-        ? [].slice.call(arguments)
-        : this.process.concat([].slice.call(arguments));
-    };
-    this.getProcess = function() {
-        return this.process;
-    };
+};
+Initial.prototype.setProcess = function() {
+    this.process = this.process === ""
+    ? [].slice.call(arguments)
+    : this.process.concat([].slice.call(arguments));
+};
+Initial.prototype.getProcess = function() {
+    return this.process;
 };
 
 /* 调用Initial测试 */
@@ -82,17 +79,16 @@ initial.setProcess(
 function Variable() {
     // 集合
     this.setMap = "";
-
-    this.set = function(key, value) {
-        var con = {};
-        con[key] = value;
-        this.setMap = this.setMap === ""
-        ? [con]
-        : this.setMap.concat(con);
-    };
-    this.get = function() {
-        return this.setMap;
-    };
+};
+Variable.prototype.set = function(key, value) {
+    var con = {};
+    con[key] = value;
+    this.setMap = this.setMap === ""
+    ? [con]
+    : this.setMap.concat(con);
+};
+Variable.prototype.get = function() {
+    return this.setMap;
 };
 
 /* 调用Variable测试 */
@@ -117,7 +113,7 @@ variable.get();
 /**
  * 常量
  */
-var Constant = Variable;
+var Constant = new Variable;
 constant = new Constant();
 
 /* 调用Constant测试 */
@@ -133,16 +129,15 @@ function Axios() {
         TRDATE: "20200713",
         BZBRCH: "18101"
     };
+};
+Axios.prototype.request = function(arg) {
+    return this.session === ""
+    ? {}[arg]
+    : this.response(arg);
+};
+Axios.prototype.response = function(arg) {
+    return this.session[arg];
     
-    this.request = function(arg) {
-        return this.session === ""
-        ? {}[arg]
-        : this.response(arg);
-    };
-    this.response = function(arg) {
-        return this.session[arg];
-        
-    };
 };
 
 /* 调用Axios测试 */
