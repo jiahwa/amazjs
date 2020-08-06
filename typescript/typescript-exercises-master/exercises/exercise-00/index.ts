@@ -26,7 +26,7 @@ Run this exercise:
 
 */
 
-const users: unknown[] = [
+const users: User[] = [
     {
         name: 'Max Mustermann',
         age: 25,
@@ -36,11 +36,31 @@ const users: unknown[] = [
         name: 'Kate Müller',
         age: 23,
         occupation: 'Astronaut'
+    },
+    // If has other type
+    {
+        name: 'Kate Müller',
+        age: 23,
+        brightPoint: 'Appearence'
     }
 ];
 
-function logPerson(user: unknown) {
+function logPerson(user: User) {
     console.log(` - ${chalk.green(user.name)}, ${user.age}`);
+}
+
+// Via extends method to solve issue like users unit type is more than one kind interface, 
+interface User extends Leader{
+    name: string,
+    age: number,
+    occupation?: string
+}
+
+// If this is needed
+interface Leader {
+    name: string,
+    age: number,
+    brightPoint?: string
 }
 
 console.log(chalk.yellow('Users:'));
