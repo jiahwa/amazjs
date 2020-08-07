@@ -63,9 +63,11 @@ const persons: Person[] = [
     }
 ];
 
+// 高级类型
+// Type Guards and Differentiating Types
 function logPerson(person: Person) {
     let additionalInformation: string;
-    if (person.role) {
+    if (isAdmin(person)) {
         additionalInformation = person.role;
     } else {
         additionalInformation = person.occupation;
@@ -74,6 +76,10 @@ function logPerson(person: Person) {
 }
 
 persons.forEach(logPerson);
+
+function isAdmin(person: Person): person is Admin{
+    return (<Admin>person).role != undefined;
+}
 
 // In case if you are stuck:
 // https://www.typescriptlang.org/docs/handbook/advanced-types.html#using-the-in-operator
