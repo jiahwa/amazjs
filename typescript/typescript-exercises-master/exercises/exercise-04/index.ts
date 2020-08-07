@@ -95,7 +95,7 @@ function logPerson(person: Person) {
     console.log(` - ${chalk.green(person.name)}, ${person.age}, ${additionalInformation}`);
 }
 
-function filterUsers(persons: Person[], criteria: User): User[] {
+function filterUsers(persons: Person[], criteria: Partial<User>): User[] {
     return persons.filter(isUser).filter((user) => {
         let criteriaKeys = Object.keys(criteria) as (keyof User)[];
         return criteriaKeys.every((fieldName) => {
@@ -112,6 +112,31 @@ filterUsers(
         age: 23
     }
 ).forEach(logPerson);
+
+
+// Mapped typs
+type Partial<T> = {
+    [P in keyof T]?: T[P]
+}
+
+// bonus
+function filterType(persons: Person[], criteria: Partial<Person>): Person[] {
+    return persons.filter((person) => {
+        let criteriaKeys = Object.keys(criteria) as (keyof Person)[];
+        return criteriaKeys.every((fieldName) => {
+            return person[fieldName] === criteria[fieldName];
+        });
+    });
+}
+
+filterType(
+    persons,
+    {
+        type: 'admin'
+    }
+).forEach(logPerson);
+
+
 
 // In case if you are stuck:
 // https://www.typescriptlang.org/docs/handbook/advanced-types.html#mapped-types
