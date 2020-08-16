@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
       "outDir": "./ES5_dist/",
-      "sourceMap": true,
+      "sourceMap": false,
       "noImplicitAny": true,
       "module": "es6",
       "target": "es5",
