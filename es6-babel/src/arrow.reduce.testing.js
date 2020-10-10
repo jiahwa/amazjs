@@ -1,0 +1,1 @@
+[ { x: 2 }, { x: 22 }, { x: 42 } ].reduce( ( acc, cur ) => Math.max( acc.x, cur.x ) )

@@ -1,0 +1,24 @@
+{
+  "name": "es6-babel",
+  "version": "1.0.0",
+  "description": "es6 test syntax",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src --out-dir dist",
+    "spread": "babel --plugins @babel/plugin-transform-spread ./src/spread.testing.js",
+    "destructuring": "babel --plugins @babel/plugin-transform-destructuring ./src/destructuring.testing.js"
+  },
+  "keywords": [
+    "es6",
+    "babel"
+  ],
+  "author": "YuJahua",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.11.5",
+    "@babel/core": "^7.11.5",
+    "@babel/plugin-transform-spread": "^7.11.0",
+    "@babel/preset-env": "^7.11.5"
+  }
+}
