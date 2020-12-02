@@ -19,6 +19,7 @@
     "@babel/cli": "^7.11.5",
     "@babel/core": "^7.11.5",
     "@babel/plugin-transform-spread": "^7.11.0",
-    "@babel/preset-env": "^7.11.5"
+    "@babel/preset-env": "^7.11.5",
+    "regenerator-runtime": "^0.13.7"
   }
 }
