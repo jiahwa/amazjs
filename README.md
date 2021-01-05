@@ -1,4 +1,4 @@
-<h1 align="center">AmazJsOrz</h1>
+<h1 align="center">amazjs</h1>
 Amazing javascript
 
 惊奇J先生
@@ -10,7 +10,7 @@ Amazing javascript
 <h3 align="center">文档脉络图</h3>
 
 ```
-AmazJsOrz
+amazjs
 
 | - LICENSE
 | - README.md
@@ -36,8 +36,8 @@ AmazJsOrz
     | - main.js
 
     | - globals.js
-    | - AmazJsOrz.png
-    | - AmazJsOrz.svg
+    | - amazjs.png
+    | - amazjs.svg
 
 | - task
     | - duplicatemodules.md
@@ -69,8 +69,8 @@ AmazJsOrz
 <h3 align="center">Bridge for web-desgin</h3>
 <h3 align="center">web适配器</h3>
 
-- [A new coding platform](https://github.com/Yujahua/AmazJsOrz)
-- [A data engine for JSON](https://github.com/Yujahua/AmazJsOrz)
+- [A new coding platform](https://github.com/jiahwa/amazjs)
+- [A data engine for JSON](https://github.com/jiahwa/amazjs)
 
 <h3 align="center" id="community">
     <a href="https://github.com/AC-angle" target="_blank">Lovely Community</a>

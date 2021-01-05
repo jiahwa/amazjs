@@ -60,7 +60,7 @@ module.exports = {
             removeFiles: ["dist"]
         }),
         new HtmlWebpackPlugin({
-            title: "AmazJsOrz",
+            title: "amazjs",
             filename: "index.html",
             favicon: "./src/AmazJsOrz.png",
             css: "./test/version0.9.1/css/style.css"

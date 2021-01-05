@@ -1,5 +1,5 @@
 # typescript
-click your terminal in the dir: *./AmazJsOrz*, 
+click your terminal in the dir: *./amazjs*, 
 
 then **run** below
 
