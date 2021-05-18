@@ -5,6 +5,12 @@ amazing js
 ```
 amazjs
 ├── dist
+├── dom
+├   ├── debounce
+├   └── throttle
+├
+├── ecma
+├
 ├── es6-babel
 ├   ├── dist
 ├   ├── doc
