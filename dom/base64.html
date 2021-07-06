@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.7/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <div id="tsr-detail-print" class="tsr-detail"><div id="old-dom"><div class="receipt-header"><div class="receipt-header-bank"><div class="receipt-header-bank-logo"><img src="data:image/png;base64,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" alt="数字银行"></div><div class="receipt-header-bank-slog"><div class="receipt-header-bank-slog-title">数字银行</div><div class="receipt-header-bank-slog-desc">BANK OF CSII</div></div></div><div class="receipt-header-title">科蓝数字银行网上银行电子回单</div><div class="ver-code">验证码：885592</div></div><table class="detail-info-table mg-top-20"><tr><td colspan="2" class="detail-info-table-title">电子回单号</td><td>179598998</td><td colspan="2" class="detail-info-table-title">最近打印日期</td><td colspan="2">2021-05-20 00:00:00</td><td class="detail-info-table-title">打印次数</td><td style="width: 120px;">5次</td></tr><tr><td rowspan="3" class="detail-info-table-title" style="width: 50px; line-height: 26px;">付款方</td><td class="detail-info-table-title">户名</td><td>李四</td><td rowspan="3" class="detail-info-table-title" style="width: 50px; line-height: 26px;">收款方</td><td colspan="2" class="detail-info-table-title">户名</td><td colspan="3">张三</td></tr><tr><td class="detail-info-table-title">账号</td><td>6666777788881004</td><td colspan="2" class="detail-info-table-title">账号</td><td colspan="3">684897897897977</td></tr><tr><td class="detail-info-table-title">开户行</td><td>徽商银行蜀山支行</td><td colspan="2" class="detail-info-table-title">开户行</td><td colspan="3">徽商银行合肥滨湖支行</td></tr><tr><td colspan="2" class="detail-info-table-title">币种</td><td></td><td colspan="3" class="detail-info-table-title">业务种类</td><td colspan="3"></td></tr><tr><td colspan="2" class="detail-info-table-title">转账金额</td><td colspan="7"><span class="text-importent">5,000.00元</span></td></tr><tr><td colspan="2" class="detail-info-table-title">金额大写</td><td colspan="7"><span class="text-importent">伍仟元整</span></td></tr><tr><td colspan="2" class="detail-info-table-title">手续费</td><td>50.00元</td><td colspan="3" class="detail-info-table-title">交易时间</td><td colspan="3">2021-05-05 15:31:12</td></tr><tr><td colspan="2" class="detail-info-table-title">交款人</td><td>李四</td><td colspan="3" class="detail-info-table-title">交易流水号</td><td colspan="3">5689897154564654</td></tr><tr><td colspan="2" class="detail-info-table-title">转账用途</td><td colspan="7">转账</td></tr><tr><td colspan="2" class="detail-info-table-title">风险提示</td><td colspan="7" class="risk-tip"> 1.电子银行业务专用凭证交易流水相同表示同一笔业务凭证，请勿重复记账使用；2.已在银行柜台领用业务凭证的客户，请注意核对，勿重复记账使用；3.收款人请至本行网站验证改业务凭证的真伪性；4.我行提供的电子回单仅作为记账的参考，若您需要记账凭证请前往我行网点使用回单打印机打印 </td></tr></table></div></div>
+    <script type="text/javascript">
+    // define
+    function canvasToImg(canvas) {
+        var img = new Image();
+        var base64 = canvas.toDataURL("image/png")
+
+        img.src = base64;
+        return img
+    }
+    function imgDrawCanvas() {
+        var c=document.getElementById("myCanvas");
+        var ctx=c.getContext("2d");
+        var img=document.getElementById("tulip");
+        ctx.drawImage(img,10,10);
+    }
+
+
+    // test
+    var content = document.getElementById("tsr-detail-print")
+    // window.scrollTo(0,0)
+    window.html2canvas(content,{
+        onrendered: function(canvas) {
+            console.dir(canvas)
+            var image = canvasToImg(canvas);
+            document.body.appendChild(image)
+        }
+    })
+
+    </script>
+</body>
+</html>
